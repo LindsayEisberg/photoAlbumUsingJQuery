@@ -30,24 +30,19 @@ nav {
       background-color: #560057;
       color: white; }
 
-header .allAlbums {
-  margin-left: 40px; }
-
 article {
   width: 85%; }
 
-section {
-  width: 1000px;
-  margin: auto; }
-  section img {
-    margin-top: 10px; }
-
 /*jquery*/
-nav, header, section, article {
+nav, article {
+  display: none; }
+
+.allAlbums {
   display: none; }
 
 .active {
-  display: inline-block; }
+  display: inline-block;
+  float: left; }
 
 .activeNav {
   background-color: #560057;

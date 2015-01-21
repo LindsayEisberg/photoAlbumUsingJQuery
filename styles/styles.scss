@@ -43,34 +43,25 @@ nav {
   }
 }
 
-header {
-  .allAlbums {
-    margin-left: 40px;
-  }
-}
-
 article {
   width: 85%;
-}
-
-section {
-  width: 1000px;
-  margin: auto;
-  img {
-    margin-top: 10px;
-  }
 }
 
 
 /*jquery*/
 
-nav, header, section, article {
+nav, article {
+  display: none;
+}
+
+.allAlbums {
   display: none;
 }
 
 
 .active {
   display: inline-block;
+  float: left;
 }
 
 .activeNav {
