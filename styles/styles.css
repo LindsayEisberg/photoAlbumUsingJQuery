@@ -7,6 +7,10 @@ ul {
   padding: 0;
   list-style-type: none; }
 
+.wrapper {
+  width: 1300px;
+  margin: auto; }
+
 nav, article {
   display: inline-block;
   vertical-align: top;
@@ -26,19 +30,20 @@ nav {
       background-color: #560057;
       color: white; }
 
+header .allAlbums {
+  margin-left: 40px; }
+
 article {
   width: 85%; }
 
-.wrapper {
-  width: 1300px;
+section {
+  width: 1000px;
   margin: auto; }
-
-.allAlbums {
-  max-width: 800px;
-  margin: auto; }
+  section img {
+    margin-top: 10px; }
 
 /*jquery*/
-header, section, article {
+nav, header, section, article {
   display: none; }
 
 .active {

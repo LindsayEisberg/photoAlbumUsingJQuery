@@ -13,6 +13,10 @@ ul {
 
 }
 
+.wrapper {
+  width: 1300px;
+  margin: auto;
+}
 
 nav, article {
 
@@ -39,22 +43,24 @@ nav {
   }
 }
 
-
+header {
+  .allAlbums {
+    margin-left: 40px;
+  }
+}
 
 article {
   width: 85%;
 }
 
-.wrapper {
-  width: 1300px;
+section {
+  width: 1000px;
   margin: auto;
+  img {
+    margin-top: 10px;
+  }
 }
 
-
-.allAlbums {
-  max-width:800px;
-  margin: auto;
-}
 
 /*jquery*/
 
