@@ -1,4 +1,77 @@
+$primary-color:#560057;
+
+
 body {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+
+nav, article {
+
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 10%;
+  margin-top: 40px;
+  margin-right: 20px;
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    &:hover {
+      background-color:$primary-color;
+      color: white;
+    }
+
+  }
+}
+
+
+
+article {
+  width: 85%;
+}
+
+.wrapper {
+  width: 1300px;
+  margin: auto;
+}
+
+
+.allAlbums {
+  max-width:800px;
+  margin: auto;
+}
+
+/*jquery*/
+
+header, section, article {
+  display: none;
+}
+
+
+.active {
+  display: inline-block;
+}
+
+.activeNav {
+  background-color: $primary-color;
+  color: white;
+}
+
+.activeNav a {
+  color: white;
 }

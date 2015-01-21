@@ -1,3 +1,52 @@
 body {
   margin: 0;
   padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+nav, article {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0; }
+
+nav {
+  width: 10%;
+  margin-top: 40px;
+  margin-right: 20px; }
+  nav a {
+    color: #560057;
+    text-decoration: none;
+    display: block;
+    padding: 15px; }
+    nav a:hover {
+      background-color: #560057;
+      color: white; }
+
+article {
+  width: 85%; }
+
+.wrapper {
+  width: 1300px;
+  margin: auto; }
+
+.allAlbums {
+  max-width: 800px;
+  margin: auto; }
+
+/*jquery*/
+header, section, article {
+  display: none; }
+
+.active {
+  display: inline-block; }
+
+.activeNav {
+  background-color: #560057;
+  color: white; }
+
+.activeNav a {
+  color: white; }
