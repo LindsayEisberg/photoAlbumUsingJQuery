@@ -51,6 +51,10 @@ img {
   -moz-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.9);
   box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.9); }
 
+.lgImage {
+  width: 1300px;
+  margin: 30px auto; }
+
 /*jquery*/
 nav, article {
   display: none; }
@@ -60,7 +64,27 @@ nav, article {
   text-align: center; }
 
 .image {
-  display: none; }
+  display: none;
+  /* width: 800px; */
+  /*   margin-left:25%;
+ */
+  margin-top: 20%;
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  transition: all 3s ease; }
+  .image img {
+    margin: auto;
+    border-radius: 0; }
+
+h3 {
+  display: none;
+  vertical-align: top;
+  float: left;
+  font-family: 'Oswald', sans-serif;
+  color: #66520C;
+  font-size: 1.7em;
+  margin-left: 20px;
+  cursor: pointer; }
 
 .active {
   display: inline-block;

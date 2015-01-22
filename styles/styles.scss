@@ -11,6 +11,11 @@ $header-color: #66520C;
 -moz-box-shadow: $shadow;
 box-shadow: $shadow;}
 
+@mixin transition($transition){
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  transition: $transition;
+}
 
 body {
   margin: 0;
@@ -74,6 +79,12 @@ img {
   border: 1px solid $header-color;
   border-radius: 10px;
   @include shadow;
+
+}
+
+.lgImage {
+  width: 1300px;
+  margin: 30px auto;
 }
 
 
@@ -88,9 +99,29 @@ nav, article {
   text-align: center;
 }
 
+
 .image {
   display: none;
+  /* width: 800px; */
+/*   margin-left:25%;
+ */  margin-top: 20%;
+  @include transition(all 3s ease);
+    img {
+      margin: auto;
+      border-radius: 0;
+  }
 
+  }
+
+  h3 {
+    display: none;
+    vertical-align: top;
+    float: left;
+    font-family: $header-font;
+    color: $header-color;
+    font-size: 1.7em;
+    margin-left: 20px;
+    cursor: pointer;
   }
 
 
