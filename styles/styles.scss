@@ -1,4 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,600|Open+Sans:400italic,600italic,400,600|Oswald);
+
 $primary-color:#560057;
+$header-font: 'Oswald', sans-serif;
+$nav-font : 'Dosis', sans-serif;
+$header-color: #66520C;
+
+
+@mixin shadow ($shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.9)){
+-webkit-box-shadow: $shadow;
+-moz-box-shadow: $shadow;
+box-shadow: $shadow;}
 
 
 body {
@@ -18,6 +29,15 @@ ul {
   margin: auto;
 }
 
+h2 {
+  font-size: 35px;
+  color: $header-color;
+  font-family: $header-font;
+  text-align: center;
+  margin-right: 45px;
+
+}
+
 nav, article {
 
   display: inline-block;
@@ -27,14 +47,17 @@ nav, article {
 }
 
 nav {
-  width: 10%;
-  margin-top: 40px;
-  margin-right: 20px;
+  width: 14%;
+  margin-top: 130px;
+  margin-right: 10px;
   a {
     color: $primary-color;
+    text-align: center;
     text-decoration: none;
+    font-family: $nav-font;
+    font-size: 24px;
     display: block;
-    padding: 15px;
+    padding: 20px;
     &:hover {
       background-color:$primary-color;
       color: white;
@@ -47,6 +70,12 @@ article {
   width: 85%;
 }
 
+img {
+  border: 1px solid $header-color;
+  border-radius: 10px;
+  @include shadow;
+}
+
 
 /*jquery*/
 
@@ -56,7 +85,13 @@ nav, article {
 
 .allAlbums {
   display: none;
+  text-align: center;
 }
+
+.image {
+  display: none;
+
+  }
 
 
 .active {

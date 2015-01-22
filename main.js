@@ -9,10 +9,16 @@ $('a').click(function(event){
   $(relatedClass).siblings().removeClass('active');
   $(relatedClass).addClass('active');
   $('nav').addClass('active');
-  console.log(relatedClass);
+  $(this).parent().removeClass('active');
+  $('.image').html('<img src="'+$(this).data('photo')+'">').addClass('active');
 
-});
 
+  });
+//   $('img').click(function(event){
+//     event.preventDefault();
+//     $('nav').removeClass('active');
+//
+// });
 });
 
 
