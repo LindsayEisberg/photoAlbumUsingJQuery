@@ -90,6 +90,13 @@ h3 {
   display: inline-block;
   float: left; }
 
+.activeImage {
+  display: inline-block;
+  float: left; }
+  .activeImage:hover {
+    transform: scale(1.5);
+    transform-origin: 0 0; }
+
 .activeNav {
   background-color: #560057;
   color: white; }
